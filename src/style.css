@@ -27,23 +27,15 @@ body {
   overflow: auto;
 }
 
-body .dialog {
-  overflow: hidden;
-}
 header {
   height: 10vh;
   background: var(--bg-img);
+  padding: 0px 25px 0px 25px;
 }
+
 nav {
   height: 100%;
   width: 100%;
-}
-
-.navbar {
-  color: var(--text-gray-sm);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .txth {
@@ -102,30 +94,79 @@ nav {
 }
 
 .profile_container p {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
 }
 
 .dialog {
   position: fixed;
-  width: 80vw;
+  width: 70vw;
   height: 80vh;
   padding: 20px;
   background-color: var(--gray-l);
   border: 1px solid #ccc;
-  border-radius: 15px;
+  border-radius: 20px 8px 8px 20px;
   box-shadow: 0 22px 70px 4px rgba(0, 0, 0, 0.56);  
 }
 
-.dialog img {
-  width: 5%;
+.dialog::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
 }
 
-.dialog img:hover {
+.dialog::-webkit-scrollbar-thumb {
+  background: var(--text-gray-l);
+  border-radius: 10px;
+}
+
+.dialog::-webkit-scrollbar-thumb:hover {
+  background: var(--bg-img);
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.dialog::-webkit-scrollbar-thumb:active {
+  background-color: var(--text-gray-m);
+}
+
+.dialog::-webkit-scrollbar-track {
+  background: #e1e1e1;
+  border-radius: 50px;
+}
+
+.dialog::-webkit-scrollbar-track:hover,
+.dialog::-webkit-scrollbar-track:active {
+background: #d4d4d4;
+}
+
+.dialog img {
+  width: 20px;
+}
+
+.dialog p {
+  font-size: 2rem;
+  margin-top: 10px;
+}
+
+#close:hover {
   cursor: pointer;
   border-radius: 50%;
   border: 2px ridge var(--text-gray-l);
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   transition: ease-out 0.3s;
+}
+
+.history {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.history img {
+  width: 50%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+#close {
+  position: fixed;
 }
 
 .hola  {
@@ -207,7 +248,7 @@ nav {
 }
 
 .profile_container img {
-  min-width: 480px;
+  max-width: 400px;
   margin-bottom: 20px;
 }
 
@@ -326,9 +367,18 @@ h2 {
 
 /* Responsive */
 
+@media (max-width: 400px) {
+  .dialog p {
+    font-size: 1.7rem;
+  }
+}
+
 @media (min-width: 601px) {
   #openI {
     display: none;
+  }
+  #openI {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
   }
 }
 
@@ -337,7 +387,7 @@ h2 {
     display: none;
   }
   #openI {
-    width: 75%;
+    width: 15%;
   }
   .profile__content {
     flex-direction: column;
@@ -358,9 +408,9 @@ h2 {
     font-size: 3rem;
   }
   .cursor {
-    font-size: 1.9rem;
+    font-size: 1.5rem;
     font-weight: 300;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
   }
   .download {
     margin-bottom: 15px;
@@ -386,17 +436,29 @@ h2 {
 
 @media (min-width: 1080px) {
   .profile_container img {
-    min-width: 560px;
+    max-width: 450px;
   }
   .global__control img {
     min-width: 400px;
     min-height: 400px;
   }
+  .dialog {
+    width: 700px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .profile_container p {
+    font-size: 2.2rem;
+  }
+  .cursor {
+    font-size: 2.1rem;
+  }
 }
 
 @media (min-width: 1920px) {
   .profile_container p {
-    font-size: 3rem;
+    font-size: 3.8rem;
   }
   .global__control img {
     max-width: 400px;
