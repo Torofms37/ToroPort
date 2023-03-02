@@ -1,0 +1,23 @@
+{
+  "name": "pria",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Torofms37/ToroPort.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Torofms37/ToroPort/issues"
+  },
+  "homepage": "https://github.com/Torofms37/ToroPort#readme",
+  "dependencies": {
+    "gh-pages": "^5.0.0"
+  }
+}
