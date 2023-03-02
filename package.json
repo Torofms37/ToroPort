@@ -1,17 +1,17 @@
 {
-  "name": "pria",
+  "name": "portafolioweb",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./src/index.html",
   "scripts": {
-    "deploy": "gh-pages -src"
+    "deploy": "gh-pages -d -src"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Torofms37/ToroPort.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "torofms37",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Torofms37/ToroPort/issues"
