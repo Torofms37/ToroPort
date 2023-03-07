@@ -175,7 +175,7 @@ background: #d4d4d4;
 
 .hola  {
   color: var(--gray-l);
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: 900;
   animation: 0.9s bgrandom infinite;
   border-radius: 30px;
@@ -252,7 +252,7 @@ background: #d4d4d4;
 }
 
 .profile_container img {
-  max-width: 300px;
+  max-width: 350px;
   margin-bottom: 20px;
 }
 
@@ -418,7 +418,7 @@ h2 {
     width: 270px;
   }
   .profile_container p {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
   .cursor {
     font-size: 1.2rem;
