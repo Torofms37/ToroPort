@@ -372,6 +372,9 @@ h2 {
 /* Responsive */
 
 @media (max-width: 400px) {
+  header {
+    height: 8vh;
+  }
   .dialog {
     width: 95vw;
   }
@@ -403,7 +406,7 @@ h2 {
   }
   .profile__img {
     width: 100%;
-    height: 90vh;
+    height: 92vh;
   }
   .about{
     display: none;
@@ -411,11 +414,14 @@ h2 {
   .hola {
     font-size: 3.5rem;
   }
+  .profile_container img {
+    width: 270px;
+  }
   .profile_container p {
-    font-size: 3rem;
+    font-size: 1.8rem;
   }
   .cursor {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 300;
     margin-bottom: 25px;
   }
@@ -429,15 +435,24 @@ h2 {
     margin-top: 15px;
   }
   .carousel-container h2 {
-    font-size: 5rem;
+    font-size: 3rem;
     margin-bottom: 15px;
   }
   .show__projects {
     width: 100%;
-    height: 90vh;
+    height: 84vh;
   }
   .description {
-    font-size: 3rem;
+    font-size: 2.2rem;
+  }
+  .contact__socials-media {
+    height: 16vh;
+  }
+  .caption img, .items__icons img {
+    width: 20px;
+  }
+  .global__control {
+    margin-top: 0;
   }
 }
 
